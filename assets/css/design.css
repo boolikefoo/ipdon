@@ -101,7 +101,8 @@ body {
 }
 .container {
 	height:100%;
-	width:1355px;
+	min-width:1100px;
+	max-width:1355px;
 	margin:0 auto;
 	padding:0 20px;
 	
