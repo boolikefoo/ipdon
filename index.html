@@ -20,9 +20,9 @@
                 <h3>FAQ</h3>
             </div>
             <div class="modalContent">
-                <div class="accord">
+                <div class="accord open">
                     <h4>Здесь вопрос?</h4>
-                    <p class="accordContent active">Ниже расположен в виде аккордеона ответ, который сворачивается или
+                    <p class="accordContent">Ниже расположен в виде аккордеона ответ, который сворачивается или
                         разворачивается</p>
                 </div>
                 <div class="accord">
@@ -187,8 +187,11 @@
     </script> -->
     <script>
         $( ".accord" ).click(function() {
-          $('.accordContent').slideUp();  
-          $( this ).find(".accordContent").slideDown( "slow" );
+            $(".accord").removeClass('open');
+            $(this).addClass('open');  
+            $('.accordContent').slideUp();  
+            $( this ).find(".accordContent").slideDown( "slow" );
+
         });
     </script>
 </body>

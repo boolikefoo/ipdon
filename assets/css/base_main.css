@@ -1,0 +1,45 @@
+* {
+    padding:0px;
+    margin:0px;
+}
+html, body, #wrap {
+	height:100%;
+}
+body > #wrap {
+	height: auto; min-height: 100%;
+}
+body {
+	background-image: url(../img/bg.png);
+	background-repeat:no-repeat;
+	background-size:auto;
+
+}
+.container {
+	height:100%;
+	width:1355px;
+	margin:0 auto;
+	padding:0 20px;
+}
+.clearfix:after {content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+footer {
+	position: relative;
+	margin-top:-150px;
+	height:150px;
+	width:1355px;
+	margin:0 auto;
+	padding:0 20px;
+	display:flex;
+	justify-content: space-between;
+	height:150px;
+	align-items: center;
+	clear: both;
+}

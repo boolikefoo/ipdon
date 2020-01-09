@@ -9,9 +9,10 @@ body, a {
 	font-family: Geometria;
 	font-weight:500;
 	font-style: normal;
+
 }
-.clearfix {
-	clear: both;
+.hide {
+	display:none !important;
 }
 .article {
 	position: relative;
@@ -21,21 +22,61 @@ body, a {
     display: block;
     background: #ff9300;
     position: absolute;
-    left: -5px;
-	top: 5px;
+
 	z-index: -1;
 }
 h1 {
 	font-weight: 800;
 	font-size: 47px;
 }
-
+h2 {
+	font-weight: 800;
+	font-size: 34px;
+}
+h3 {
+	font-weight: 800;
+	font-size: 27px;
+}
+h4 {
+	font-size:22px;
+	font-weight: 800;
+}
+h5 {
+	font-size:18px;
+	font-weight:800;
+}
+h6 {
+	font-size:14px;
+	font-weight: 800;
+}
 h1.article::before {
 	height: 32px;
-    width: 32px;
+	width: 32px;
+	left: -5px;
+	top: 5px;
 }
-h2.artice::before {
-
+h2.article::before {
+	height: 26px;
+	width: 26px;
+	left: -5px;
+	top: 5px;
+}
+h3.article::before {
+	height: 20px;
+	width: 20px;
+	left:-10px;
+}
+h4.article::before {
+	height: 16px;
+    width: 16px;
+}
+h5.article::before {
+	height: 12px;
+    width: 12px;
+}
+h6.article::before {
+	height: 8px;
+    width: 8px;
 }
 
 /*---font---*/
@@ -90,22 +131,7 @@ h2.artice::before {
 	font-style: normal;
 }
 /*---end font---*/
-html, body {
-	height:100%;
-	width:100%;	
-}
-body {
-	background-image: url(../img/bg.png);
-	background-repeat:no-repeat;
-	background-size:cover;
-}
-.container {
-	height:100%;
-	width:1355px;
-	margin:0 auto;
-	padding:0 20px;
-	
-}
+
 
 /*---HEADER SECTION---*/
 header {
@@ -158,7 +184,7 @@ nav.topMenu a {
 /*---SLIDER---*/
 #slider {
 	height: 540px;
-
+	position: relative;
 }
 .slide {
 	background-repeat: no-repeat;
@@ -194,7 +220,7 @@ nav.topMenu a {
 }
 .sliderControl {
 	position: absolute;
-    top: 52%;
+    top: 68%;
 }
 .sliderControl > a {
 	display: inline-block;
@@ -208,3 +234,127 @@ nav.topMenu a {
 }
 
 /*---END SLIDER---*/
+/*--PAYMENTS*---*/
+#payments {
+	background-image: url(../img/icons/payments_icons/group.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 35%;
+	padding:50px 0;
+}
+/*--PAYMENTS*---*/
+/*---videoPreview---*/
+#videoPreview {
+	
+	padding:100px 0;
+}
+.player {
+	width:100%;
+	height:683px;
+	background-color:#ff9300;
+}
+
+/*---END videoPreview---*/
+/*---NEWS---*/
+.newsWrap {
+	display:flex;
+	justify-content: space-between;
+}
+.newsItem {
+	width:330px;
+}
+.newsItem p {
+	font-size: 14pt;
+	font-weight: 100;
+	padding:22px 0;
+}
+.newsItem .pubDate {
+	color:#696968;
+}
+.allNewsWrap {
+	padding:50px;
+	text-align: center;
+}
+.allNewsWrap a {
+	font-size:20px;
+	font-weight: 300;
+}
+.allNewsWrap a img {
+	padding:0 10px;
+}
+/*---NEWS---*/
+
+
+/*---FOOTER---*/
+
+
+footer a {
+	text-decoration: none;
+}
+.footerMenu {
+	list-style: none;
+}
+.footerMenu li  {
+	padding: 5px 0;
+}
+.webMoneyCert {
+	background-image: url(../img/icons/payments_icons/webmoney-paying-logo_crt.png);
+	background-repeat: no-repeat;
+	width: 192px;
+	height:60px;
+}
+/*---FOOTER---*/
+
+/*---MODAL---*/
+#modalLayer {
+	position: fixed;
+	width:100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	z-index: 100;
+
+}
+
+.modal {
+	margin:0 auto;
+	width:780px;
+	background: #161414;
+	height: fit-content;
+}
+.modalWrap {
+    position: fixed;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    z-index: 110;
+	align-items: center;
+}
+.modal .modalHeader {
+	padding:20px;
+	background: #0a0909;
+	text-align:center;
+	position: relative;
+}
+.modal .modalContent {
+	padding: 20px 50px;
+}
+.modalHeader .modelClose a {
+	display:block;
+	width:16px;
+	height: 16px;
+	background: url(../img/icons/close.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	right:30px;
+	top:30px;
+}
+.accord {
+	padding: 25px 0;
+}
+.accordContent {
+	display:none;
+}
+.accord.open .accordContent {
+	display:inherit;
+}
+/*---MODAL---*/
